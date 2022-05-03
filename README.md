@@ -2,11 +2,11 @@
 
 # Hello Rails React 
 
->  Ruby Raect App
+>  Ruby on rails and React App
 
 ## Description
 
-integrating Rails and React in one app.
+Iintegrating Rails and React in one application.
 
 ## Project requirements
 
