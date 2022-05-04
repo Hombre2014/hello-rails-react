@@ -1,7 +1,11 @@
 import { legacy_createStore as createStore } from 'redux';
 
 const initialState = {
-  greetings: []
+  greetings: [
+    {
+      message: 'Hello from me',
+    }
+  ]
 };
 
 function rootReducer(state, action) {

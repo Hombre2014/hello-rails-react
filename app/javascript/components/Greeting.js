@@ -14,10 +14,18 @@ function getGreetings() {
 
 class Greeting extends React.Component {
   render () {
+    const { greetings } = this.props;
+    console.log(greetings);
+    const greetingsList = greetings.map((greeting) => {
+      return (<p>{greeting.message}</p>);
+    })
+
     return (
       <React.Fragment>
         Greeting Message: {this.props.greetingMessage}
         <button className="btn btn-more" onClick={() => this.props.getGreetings()}>Get another greeting</button>
+        <br />
+        <div>{ greetingsList }</div>
       </React.Fragment>
     );
   }
