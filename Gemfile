@@ -27,6 +27,13 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Add webpacker and react-rails gems
+gem 'webpacker'
+gem 'react-rails'
+
+# Add rdoc gem, because rails c doesn't run
+gem 'rdoc'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
