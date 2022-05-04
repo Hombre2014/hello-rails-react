@@ -1,27 +1,14 @@
-import { applyMiddleware, legacy_createStore as createStore } from 'redux';
+import { legacy_createStore as createStore, combineReducers, applyMiddleware } from 'redux';
+import logger from 'redux-logger';
 import thunk from 'redux-thunk';
+import greetingsReducer from './greetings';
 
-const FETCH_GREETING = 'hello-rails-react/greetings/FETCH_GREETING';
+const reducer = combineReducers({
+  greetingsReducer,
+});
 
-const initialState = {
-  greetings: []
-};
+const store = createStore(
+  reducer, applyMiddleware(logger, thunk),
+);
 
-function rootReducer(state, action) {
-  switch (action.type) {
-    case "GET_GREETINGS_SUCCESS":
-      return { greetings: action.json.greetings };
-    case "FETCH_GREETING":
-      return action.payload;
-  }
-  return state;
-}
-
-export default function configureStore() {
-  const store = createStore(
-    rootReducer,
-    initialState,
-    applyMiddleware(thunk)
-    );
-  return store;
-}
+export default store;
