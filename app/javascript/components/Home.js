@@ -4,7 +4,10 @@ class Home extends React.Component {
   render () {
     return (
       <React.Fragment>
-        Welcome Home!
+        <div className='container'>
+          <h1>Rails React Demo App</h1>
+          <a href="/hello" className="link">Greetings</a>
+        </div>
       </React.Fragment>
     );
   }
