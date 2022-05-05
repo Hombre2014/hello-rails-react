@@ -31,10 +31,10 @@ Open a browser and go to: `https://localhost:3000` to view the app.
 
 ## Database setup
 
-To start with clean database use:
+To start with the sample database, please use:
 
 `cd hello-rails-react`</br>
-`rails db:create db:migrate`
+`rails db:create db:migrate db:seed`
 
 ## Author
 
