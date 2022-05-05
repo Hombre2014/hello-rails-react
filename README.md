@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello Rails React 
+# "Hello world" with rails-react gem
 
 >  Ruby on Rails and React App
 
