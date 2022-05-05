@@ -2,7 +2,7 @@
 
 # Hello Rails React 
 
->  Ruby on rails and React App
+>  Ruby on Rails and React App
 
 ## Description
 
@@ -15,7 +15,7 @@ The project requirements can be viewed [here](https://github.com/microverseinc/c
 ## Built With
 
 - Languages: Ruby, JavaScript
-- Framework: Ruby on Rails, React
+- Framework: Ruby on Rails, React, Redux
 - Database: PostgreSQL
 
 ## Usage
@@ -25,6 +25,8 @@ Run the following commands:</br>
 `cd hello-rails-react`</br>
 `bundle install`</br>
 `rails s`</br>
+In separate terminal run the following command to start the Webpack Dev server
+`./bin/webpack-dev-server`
 Open a browser and go to: `https://localhost:3000` to view the app.
 
 ## Database setup
