@@ -13,8 +13,8 @@ const Greeting =() => {
       <div className="greetings">
         <h1>Rails React Demo App</h1>
         <h2 className="text">{ greeting }</h2>
-        <button onClick={() => dispatch(fetchGreetingApi())} className="link">Get another greeting</button>
-        <a href="/" className="link">Home</a>
+        <a onClick={() => dispatch(fetchGreetingApi())} className="link">Get another greeting</a>
+        <a onClick={() => {window.location.href="/"}} className="link">Home</a>
     </div>
   );
 }

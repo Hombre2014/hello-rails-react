@@ -6,7 +6,7 @@ class Home extends React.Component {
       <React.Fragment>
         <div className='container'>
           <h1>Rails React Demo App</h1>
-          <a href="/hello" className="link">Greetings</a>
+          <a onClick={() => {window.location.href="/hello"}} className="link">Greetings</a>
         </div>
       </React.Fragment>
     );
